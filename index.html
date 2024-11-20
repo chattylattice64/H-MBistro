@@ -80,6 +80,34 @@
             border-bottom: 1px solid #ccc;
         }
 
+        .order-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .order-section select,
+        .order-section input {
+            margin: 10px;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .order-section button {
+            background-color: #d9534f;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .order-section button:hover {
+            background-color: #c9302c;
+        }
+
         .blog-box {
             margin-bottom: 30px;
         }
@@ -89,17 +117,6 @@
             color: #d9534f;
             border-bottom: 2px solid #d9534f;
             padding-bottom: 5px;
-        }
-
-        .blog-box textarea {
-            width: 100%;
-            height: 150px;
-            padding: 10px;
-            font-size: 1em;
-            margin-top: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            resize: vertical;
         }
 
         footer {
@@ -130,7 +147,6 @@
         <a href="Blogs.html">Blogs</a>
         <a href="Contact%20Us.html">Contact Us</a>
         <a href="About%20Us.html" class="active">About Us</a>
-    
     </nav>
 
     <!-- Main Content -->
@@ -144,7 +160,34 @@
                 <li>Sinigang - $8.99</li>
                 <li>Kare Kare - $8.99</li>
                 <li>Chicken Adobo - $6.99</li>
+                <li>Pad Thai - $12.99</li>
+                <li>Vegetable Stir-Fry - $9.99</li>
+                <li>Margherita Pizza - $11.99</li>
+                <li>Lechon Belly - $25.99</li>
+                <li>Vegan Buddha Bowl - $10.99</li>
             </ul>
+        </section>
+
+        <!-- Ordering Section -->
+        <section id="order" class="order-section">
+            <h2>Order Your Favorite Dish</h2>
+            <form>
+                <select name="dish" required>
+                    <option value="" disabled selected>Select a dish</option>
+                    <option value="Fillet Mignon">Fillet Mignon - $28</option>
+                    <option value="Pork Chops">Pork Chops With Fig and Agrodolce - $17</option>
+                    <option value="Sinigang">Sinigang - $8.99</option>
+                    <option value="Kare Kare">Kare Kare - $8.99</option>
+                    <option value="Chicken Adobo">Chicken Adobo - $6.99</option>
+                    <option value="Pad Thai">Pad Thai - $12.99</option>
+                    <option value="Vegetable Stir-Fry">Vegetable Stir-Fry - $9.99</option>
+                    <option value="Margherita Pizza">Margherita Pizza - $11.99</option>
+                    <option value="Lechon Belly">Lechon Belly - $25.99</option>
+                    <option value="Vegan Buddha Bowl">Vegan Buddha Bowl - $10.99</option>
+                </select>
+                <input type="number" name="quantity" placeholder="Quantity" min="1" required>
+                <button type="submit">Place Order</button>
+            </form>
         </section>
 
         <!-- Blog Section -->
@@ -176,5 +219,4 @@ A meal at H&M Bistro is no meal at all. It is a celebration of life, together fo
         <p>&copy; 2024 H&M Bistro. All rights reserved.</p>
     </footer>
 </body>
-
 </html>
